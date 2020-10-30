@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--下标赋值-->
+    <!--<bean id="User" class="com.chen.pojo.User">-->
+        <!--<constructor-arg index="0" value="chen"/>-->
+    <!--</bean>-->
+
+    <!--类型赋值-->
+    <!--<bean id="User" class="com.chen.pojo.User">-->
+        <!--<constructor-arg type="java.lang.String" value="ding"/>-->
+    <!--</bean>-->
+
+    <!--参数名赋值-->
+    <!--<bean id="User" class="com.chen.pojo.User">-->
+        <!--<constructor-arg name="name" value="wei"/>-->
+    <!--</bean>-->
+
+    <!--<alias name="User" alias="user"/>-->
+
+
+    <!--bean配置-->
+    <!--
+    id : bean的唯一标识符，也就是相当于对象名
+    class : bean对象所对应的全限定名： 包名+类名
+    name : 别名，而且可以同时取多个别名
+    -->
+    <bean id="User" class="com.chen.pojo.User" name="user,u2 u3">
+        <property name="name" value="chen"/>
+    </bean>
+</beans>
